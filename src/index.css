@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Subscription App Design System */
+
+
 @layer base {
   :root {
-    /* Core Colors - Purple/Blue Gradient Theme */
+    /* Core Colors - Dark Background + Light Foreground */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -15,29 +16,29 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Rich Red */
-    --primary: 0 84% 60%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 0 100% 75%;
+    /* Primary - Pure Red */
+    --primary: 0 84% 60%;            /* Vivid Red */
+    --primary-foreground: 0 0% 98%;  /* White for contrast */
+    --primary-glow: 0 84% 70%;       /* Lighter Red for glow */
 
-    /* Secondary - Deep Blue */
-    --secondary: 217 91% 60%;
+    /* Secondary - Keep red-based but darker */
+    --secondary: 0 70% 40%;
     --secondary-foreground: 0 0% 98%;
 
     /* Muted - Subtle Grays */
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    /* Accent - Vibrant Cyan */
+    /* Accent - Still cyan for contrast */
     --accent: 199 89% 48%;
     --accent-foreground: 0 0% 98%;
 
     /* Status Colors */
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84.2% 60.2%;     /* Red */
     --destructive-foreground: 0 0% 98%;
-    --success: 142 76% 36%;
+    --success: 142 76% 36%;           /* Green */
     --success-foreground: 0 0% 98%;
-    --warning: 47 96% 53%;
+    --warning: 47 96% 53%;            /* Yellow */
     --warning-foreground: 0 0% 98%;
 
     /* UI Elements */
@@ -45,39 +46,37 @@
     --input: 240 3.7% 15.9%;
     --ring: 0 84% 60%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(217 91% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(199 89% 48%));
+    /* Gradients - Pure Red Shades */
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 84% 50%), hsl(0 84% 40%));
     --gradient-subtle: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 5% 6%));
-    --gradient-card: linear-gradient(145deg, hsl(240 5% 6%), hsl(240 3.7% 15.9%));
+    --gradient-card: linear-gradient(145deg, hsl(0 84% 20%), hsl(0 84% 15%));
 
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(0 84% 60% / 0.3);
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
-    --shadow-glow: 0 0 40px hsl(0 100% 75% / 0.4);
+    --shadow-glow: 0 0 40px hsl(0 84% 60% / 0.4);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+    /* Radius */
     --radius: 0.75rem;
 
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: 0 84% 60%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 84% 95%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 84% 90%;
+    --sidebar-ring: 0 84% 60%;
   }
+}
+
+/* Premium Subscription App Design System */
 
   .light {
     --background: 0 0% 100%;
