@@ -1,14 +1,15 @@
-import { Header } from "@/components/Header";
-import { UserInfoForm } from "@/components/UserInfoForm";
+import { ProfessionalHeader } from "@/components/ProfessionalHeader";
+import { ProfessionalFooter } from "@/components/ProfessionalFooter";
+import { ClientPortalForm } from "@/components/ClientPortalForm";
 
 export default function UserInfo() {
   return (
-    <div className="min-h-screen bg-gradient-subtle">
-      <Header 
-        title="Welcome to SubFlow"
-        subtitle="Get started by providing your information below"
-      />
-      <UserInfoForm />
+    <div className="min-h-screen bg-gradient-subtle flex flex-col">
+      <ProfessionalHeader />
+      <main className="flex-1">
+        <ClientPortalForm />
+      </main>
+      <ProfessionalFooter />
     </div>
   );
 }
