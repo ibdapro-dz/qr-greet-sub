@@ -15,10 +15,10 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Rich Purple */
-    --primary: 262 83% 58%;
+    /* Primary - Rich Red */
+    --primary: 0 84% 60%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 262 100% 75%;
+    --primary-glow: 0 100% 75%;
 
     /* Secondary - Deep Blue */
     --secondary: 217 91% 60%;
@@ -43,18 +43,18 @@
     /* UI Elements */
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 262 83% 58%;
+    --ring: 0 84% 60%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(217 91% 60%));
     --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(199 89% 48%));
     --gradient-subtle: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 5% 6%));
     --gradient-card: linear-gradient(145deg, hsl(240 5% 6%), hsl(240 3.7% 15.9%));
 
     /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(262 83% 58% / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(0 84% 60% / 0.3);
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
-    --shadow-glow: 0 0 40px hsl(262 100% 75% / 0.4);
+    --shadow-glow: 0 0 40px hsl(0 100% 75% / 0.4);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,7 +90,7 @@
     --muted-foreground: 240 3.8% 46.1%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 262 83% 58%;
+    --ring: 0 84% 60%;
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(240 4.8% 95.9%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 4.8% 95.9%));
     --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
